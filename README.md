@@ -4,7 +4,7 @@ This purpose of this application is to serve you with Rails 7 App with devise pr
 
 ### Setup
 
-Fork your own project from the Rails-Seven-Devise-Template. Clone it. Then, all you have to do to get started is:
+Fork your own project from the Rails-Seven-Bootstrap-Template. Clone it. Then, all you have to do to get started is:
 
 ```
 bundle install
@@ -37,5 +37,5 @@ rails s
 * Directly accessible (without devise)
   * [http://localhost:3000/homes/about]()
 * In-direct (only after devise sign up or sign in)
-  * [http://localhost:3000]() 
+  * [http://localhost:3000]()
   * [http://localhost:3000/homes/index]()
