@@ -1,6 +1,6 @@
 # README
 
-This purpose of this application is to serve you with Rails 7 App with devise pre-configured.
+This purpose of this application is to serve you with Rails 7 App basic bootstarp integration and fully functional devise(pre-configured).
 
 ### Setup
 
@@ -32,10 +32,9 @@ rails s
 
 * 4.9.3
 
-### Routes
+### Some devise commands
 
-* Directly accessible (without devise)
-  * [http://localhost:3000/homes/about]()
-* In-direct (only after devise sign up or sign in)
-  * [http://localhost:3000]()
-  * [http://localhost:3000/homes/index]()
+* To generate devise
+  * rails g devise:views
+* To generate devise controllers
+  * rails g devise:controllers users

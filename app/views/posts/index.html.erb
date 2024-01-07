@@ -1,0 +1,20 @@
+<div class="container">
+  <div id="posts">
+    <% @posts.each_slice(5) do |posts_chunk| %>
+      <div class="row row-cols-1 row-cols-md-3 g-4">
+        <% posts_chunk.each do |post| %>
+          <div class="col">
+            <%= render 'indexposts', post: post %>
+          </div>
+        <% end %>
+      </div>
+    <% end %>
+  </div>
+</div>
+
+<!-- 
+  <p style="color: green"><%= notice %></p>
+  <h1 class="mb-4">Posts</h1> 
+  <%= link_to "New post", new_post_path, class: "btn btn-success mt-4" %>
+-->
+

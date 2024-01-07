@@ -1,0 +1,33 @@
+<div class="col">
+  <div id="<%= dom_id post %>" class="card h-100">
+    <div class="card-body">
+
+      <div>
+        <% if post.images.attached? %>
+          <%= image_tag(post.images.last, class: 'card-img-top', height: 300, width: 20) %>
+        <% else %>
+          <p class="card-text">No images available for this post.</p>
+        <% end %>
+      </div>
+
+      <h4 class="card-title">
+        <%= link_to post.title, post, class: 'card-link' %>
+      </h4>
+
+      <div class="card-text">
+        <%= link_to post.body, post, class: 'card-link' %>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+
+<!-- 
+<h4 class="card-subtitle mb-2 text-muted">Posted By <%= post.user.email %></h4>
+<h6 class="card-text"><%= pluralize(post.views, "View") %></h6>
+
+<div class="card-text">
+  <%= post.public %>
+</div>
+-->
